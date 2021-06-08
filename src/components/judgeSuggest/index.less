@@ -1,0 +1,170 @@
+.suggest_loading {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  z-index: 600;
+  background: #ffffff;
+  border: none;
+}
+.content {
+  height: 100%;
+  .progress_card {
+    height: 100px;
+    padding: 0 10px;
+    :global {
+      .ant-card-head-title {
+        padding: 6px 0;
+      }
+    }
+  }
+
+  :global {
+    .ant-progress-show-info .ant-progress-outer {
+      margin-right: 0;
+      padding-right: 0;
+      .ant-progress-bg {
+        height: 10px !important;
+      }
+    }
+    .ant-progress-status-success .ant-progress-text {
+      display: none;
+    }
+    .ant-card-body {
+      padding: 5px 0;
+    }
+    .ant-card-head {
+      border-bottom: none;
+      padding: 0;
+      min-height: auto;
+    }
+
+    .ant-card-head-title {
+      padding: 0;
+    }
+  }
+
+  .suggest_card {
+    border-bottom: none;
+    padding: 20px 0 0;
+    word-break: break-all;
+    .high_light {
+      font-family: PingFangSC-Medium;
+      font-size: 12px;
+      color: #0b80ef;
+      line-height: 18px;
+    }
+
+    p {
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.85);
+      line-height: 18px;
+    }
+    :global {
+      .ant-card-body {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.card_title {
+  display: flex;
+  align-items: center;
+}
+
+.title_icon_content {
+  position: relative;
+  height: 18px;
+  width: 16px;
+  display: inline-block;
+  overflow: hidden;
+
+  .react_icon {
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 10px;
+    height: 18px;
+    background: #ffffff;
+    z-index: 9;
+  }
+
+  .circle_icon {
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 16px;
+    height: 18px;
+    border-radius: 8px;
+    background: #0b80ef;
+    z-index: 6;
+  }
+}
+
+.title_name {
+  font-weight: 600;
+  margin-left: -5px;
+}
+
+.progress_graph {
+  position: relative;
+  margin-top: 10px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  bottom: 18px;
+  left: 284px;
+}
+
+.first {
+  border-top: 12px solid #ea2a25;
+}
+
+.second {
+  border-top: 12px solid #fa6d35;
+}
+
+.third {
+  border-top: 12px solid #fdb438;
+}
+
+.four {
+  border-top: 12px solid #f8e066;
+}
+
+.labelContent {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    text-align: center;
+  }
+}
+.linebus {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #0b80ef;
+  line-height: 18px;
+  margin-left: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.btn {
+  margin-top: 5px;
+  img {
+    position: relative;
+    top: -1px;
+    left: 3px;
+  }
+}

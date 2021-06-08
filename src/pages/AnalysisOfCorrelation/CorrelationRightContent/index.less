@@ -1,0 +1,87 @@
+@import '../../../global';
+
+//右边的卡片
+.public_width_card(@right) {
+  position: absolute;
+  top: 0;
+  right: @right;
+  bottom: 0px;
+  // background: white;
+}
+// .rightRelativeContain {
+//   width: 450px;
+//   position: relative;
+//   height: 100%;
+// }
+.rightCard {
+  .public_width_card(0);
+  .public_transition;
+}
+.hiddenRelativeContain {
+  .public_width_card(-334px);
+  .public_transition;
+}
+.hiddenRightCard {
+  .public_width_card(-410px);
+  .public_transition;
+}
+
+.flowTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+// .rightflexibleContain {
+//   display: flex;
+//   background: rgb(255, 255, 255);
+//   width: 30px;
+//   position: absolute;
+//   top: 0;
+//   left: -30px;
+//   box-sizing: border-box;
+// }
+// .iconContain {
+//   padding: 10px 5px;
+//   display: flex;
+//   align-items: center;
+//   font-size: 16px;
+// }
+.analyzeTab2 {
+  width: 320px;
+  height: 100%;
+  :global {
+    .ant-tabs-nav {
+      margin: 0;
+      .ant-tabs-nav-wrap {
+        padding: 0.1px;
+        .ant-tabs-nav-list {
+          width: 100%;
+          .ant-tabs-tab {
+            margin: 0;
+            width: 50%;
+            text-align: center;
+            padding: 10px 0;
+            .ant-tabs-tab-btn {
+              width: 100%;
+              color: #000000;
+              font-weight: 500;
+              font-size: 16px;
+            }
+          }
+          .ant-tabs-tab.ant-tabs-tab-active {
+            background: #0b80ef;
+            .ant-tabs-tab-btn {
+              color: #fff;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    .ant-tabs-content {
+      position: absolute;
+      top: 42px;
+      bottom: 0;
+    }
+  }
+}

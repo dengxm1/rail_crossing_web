@@ -1,0 +1,150 @@
+.wrap_index {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  background: rgb(243, 244, 247);
+  .boxReportBg {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 502;
+    background-color: white;
+  }
+  .topTitle {
+    background: white;
+    padding: 15px 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  }
+  .wrap_content {
+    background: white;
+    height: calc(100vh - 145px);
+  }
+}
+.analyzeTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.topTip {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 32px;
+}
+.tableContain {
+  width: 100%;
+  //height: 500px;
+  :global {
+    .ant-card-body {
+      padding-bottom: 0;
+    }
+  }
+}
+.selectContain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttonTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+  flex-wrap: wrap;
+}
+.operatorTool {
+  display: flex;
+  justify-content: center;
+  :global {
+    .ant-btn {
+      padding: 4px 0;
+      span {
+        padding: 0 4px;
+      }
+    }
+  }
+}
+.firstBtn {
+  :global {
+    span {
+      padding: 0 !important;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &::after {
+        content: '';
+        display: block;
+        width: 1.5px;
+        height: 12px;
+        background: #999;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.centerBtn {
+  :global {
+    span {
+      padding: 0 !important;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &::before {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 12px;
+        background: #999;
+        margin-right: 5px;
+      }
+      &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 12px;
+        background: #999;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.takeBtn {
+  border-radius: 4px;
+}
+.twoBtn {
+  margin-left: 10px;
+}
+.tableStyle {
+  margin-top: 20px;
+}
+.logTableStyle {
+  :global {
+    .ant-modal-body {
+      padding: 10px 24px;
+    }
+    .ant-pagination {
+      position: absolute;
+      right: 80px;
+      bottom: -69px;
+    }
+  }
+  .logTable {
+    // overflow-y: auto;
+    // min-height: 330px;
+    // max-height: calc(100vh - 330px);
+  }
+}
+.takeTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dot {
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-radius: 100%;
+  position: relative;
+  top: -2px;
+  margin-right: 3px;
+}

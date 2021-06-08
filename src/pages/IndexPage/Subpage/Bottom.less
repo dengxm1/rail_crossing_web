@@ -1,0 +1,86 @@
+.Bottom {
+  position: absolute;
+  left: 20%;
+  bottom: 18px;
+  z-index: 500;
+  width: 60%;
+  height: 9%;
+  min-height: 60px;
+  // height: 80px;
+  // // padding: 0 -1px;
+  background-color: #fff;
+  border: 1px solid #7ec5fc;
+  box-shadow: 0 0 20px 10px #c0e0f9;
+  // background-image: url('../../../static/img/icon_floating2.png');
+  // background-size: 100% 100%;
+  // padding: 20px;
+  ul {
+    height: 100%;
+  }
+  ul li {
+    float: left;
+    height: 100%;
+    width: 25%;
+    padding: 1% 0;
+    > div {
+      height: 100%;
+      padding: 0 4%;
+      border-right: 1px solid #ccc;
+      > div {
+        float: left;
+        height: 100%;
+        img {
+          height: 100%;
+        }
+        b {
+          font-size: 18px;
+          display: block;
+          color: rgba(0, 0, 0, 0.85);
+        }
+        i {
+          font-style: normal;
+          color: #da1414;
+          font-size: 12px;
+        }
+        .iconUp {
+          display: block;
+          height: 11px;
+          margin-left: 7px;
+        }
+        span {
+          color: rgba(0, 0, 0, 0.45);
+        }
+      }
+      .rate {
+        float: right;
+        margin-right: 10px;
+        padding-top: 4%;
+      }
+    }
+  }
+  // ul > li:first-child {
+  //   border-top: 4px solid #0b80ef;
+  // }
+  // ul > li:nth-child(2) {
+  //   border-top: 4px solid #2ca150;
+  // }
+  // ul > li:nth-child(3) {
+  //   border-top: 4px solid #ffac00;
+  // }
+  ul > li:nth-child(4) {
+    // border-top: 4px solid #e25959;
+    > div {
+      border-right: none;
+    }
+  }
+  @media only screen and (max-width: 1600px) {
+    ul li {
+      > div > div {
+        b {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

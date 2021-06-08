@@ -1,0 +1,66 @@
+// @import '../../global.less';
+.boxBg {
+  position: absolute;
+  top: 0;
+  z-index: 501;
+  height: calc(100% - 28px);
+  margin: 14px;
+  background: #ffffff;
+  border: 1px solid #7ec5fc;
+  box-shadow: 0 0 10px 10px #c0e0f9;
+}
+.boxBgLeft {
+  left: 0;
+}
+.boxBgRight {
+  right: 0;
+}
+.boxBgLeft,
+.boxBgRight {
+  width: calc(18% + 2px);
+  min-width: 260px;
+}
+.corner {
+  height: 0;
+  width: 0;
+  border: 8px solid #0b80ef;
+  position: absolute;
+  z-index: 500;
+}
+.leftTopCorner {
+  top: -4.5px;
+  left: -4.5px;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+.rightTopCorner {
+  top: -4.5px;
+  right: -4.5px;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+.leftBottomCorner {
+  bottom: -4.5px;
+  left: -4.5px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+.rightBottomCorner {
+  bottom: -4.5px;
+  right: -4.5px;
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+
+.relativeContainBgL {
+  width: 302px;
+  z-index: 500;
+}
+.relativeContainBgR {
+  width: 322px;
+  z-index: 500;
+}
+.reportBgL {
+  width: calc(100% - 28px);
+  z-index: 500;
+}

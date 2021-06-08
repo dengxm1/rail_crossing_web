@@ -1,0 +1,13 @@
+@import '../../global.less';
+.wrap_index {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  :global {
+    .ant-spin-nested-loading > div > .ant-spin {
+      z-index: 0;
+      max-height: 520px;
+    }
+  }
+}

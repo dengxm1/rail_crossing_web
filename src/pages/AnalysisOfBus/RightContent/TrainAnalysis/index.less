@@ -1,0 +1,118 @@
+.lineTrend {
+  position: relative;
+  height: 90px;
+  background: #ffffff;
+  :global {
+    .ant-spin-nested-loading {
+      height: 100%;
+    }
+  }
+  .titleContent {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-image: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0) 19%,
+      #e8e8e8 100%
+    ) !important;
+    > span {
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
+}
+
+.loading_style {
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+.cardContent {
+  height: 100%;
+}
+.card_wrap {
+  height: calc(100% - 90px);
+}
+.trend_titleContent {
+  height: 33px;
+  line-height: 33px;
+}
+.first_outerBody {
+  position: absolute;
+  top: 33px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.bodyWrap,
+.bodyWrap_two {
+  height: 100%;
+  width: 100%;
+  background: white;
+  padding: 6px 10px;
+  display: flex;
+  align-items: flex-start;
+  .wrap_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .oneLineContent,
+  .rateContent {
+    display: flex;
+  }
+  .busName {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #0b80ef;
+    width: 45%;
+  }
+  .trend_rate {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    text-align: center;
+  }
+  .repeat,
+  .flowprobability {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    text-align: center;
+    line-height: 20px;
+  }
+  .repeat {
+    margin-left: 22px;
+  }
+}
+.bodyWrap_two {
+  margin-top: 10px;
+}
+.bodyWrap {
+  justify-content: space-between;
+}
+.UnitCard {
+  min-height: 160px;
+  height: 32%;
+  :global {
+    .ant-card-head {
+      border-bottom: none;
+    }
+    .ant-spin-nested-loading {
+      width: 100%;
+      height: 100%;
+    }
+    .ant-spin-container {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.tripTime {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}

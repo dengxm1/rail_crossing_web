@@ -1,0 +1,82 @@
+.IndexClickBox {
+  width: 320px;
+  height: 220px;
+  background-color: #fff;
+  h3 {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    line-height: 36px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .content {
+    margin: 10px;
+    :global {
+      .ant-col {
+        position: relative;
+        font-size: 13px;
+      }
+      .ant-col-10 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .main {
+      line-height: 24px;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.85);
+      padding: 0 5px;
+      span {
+        font-size: 16px;
+        color: #0b80ef;
+        position: relative;
+        top: 1px;
+      }
+      .stopOrLine {
+        margin-bottom: 5px;
+      }
+      .subwayName {
+        font-size: 16px;
+        color: #0b80ef;
+      }
+      .DownOutlined {
+        position: relative;
+        top: 2px;
+        left: 5px;
+        font-size: 13px;
+      }
+    }
+    .params {
+      margin: 12px 0 16px 0;
+      text-align: center;
+      b {
+        display: block;
+        font-size: 20px;
+        color: #0b80ef;
+        line-height: 24px;
+        font-weight: 400;
+        span {
+          font-size: 14px;
+        }
+      }
+      i {
+        position: absolute;
+        display: inline-block;
+        height: 30px;
+        width: 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+        top: 8px;
+        right: 0;
+      }
+    }
+  }
+  .btn {
+    width: 100%;
+    img {
+      position: relative;
+      top: -1px;
+      left: 3px;
+    }
+  }
+}

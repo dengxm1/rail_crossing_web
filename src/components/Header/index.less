@@ -1,0 +1,128 @@
+.forHeader {
+  width: 100%;
+  min-width: 1220px;
+  height: 50px;
+  background-image: linear-gradient(
+    180deg,
+    #1f8ff9 0%,
+    rgba(65, 152, 235, 0.85) 100%
+  ) !important;
+  .logo {
+    width: 280px;
+    height: 31px;
+    //background: rgba(255, 255, 255, 0.2);
+    margin: 10px;
+    margin-right: 20px;
+    float: left;
+    line-height: 31px;
+
+    img {
+      margin-right: 10px;
+      margin-top: -5px;
+      margin-left: 8px;
+    }
+
+    span {
+      font-family: PingFangSC-Semibold;
+      font-size: 18px;
+      color: #ffffff;
+      text-align: left;
+      line-height: 16px;
+    }
+  }
+
+  .wrap_menu {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    :global {
+      .ant-menu-horizontal {
+        line-height: 50px;
+        height: 50px;
+      }
+
+      .ant-menu.ant-menu-dark,
+      .ant-menu-dark .ant-menu-sub,
+      .ant-menu.ant-menu-dark .ant-menu-sub {
+        background: none;
+      }
+      .ant-menu-item-selected {
+        //border: none!important;
+        transition: 0.3s !important;
+        background-color: #066dce !important;
+      }
+
+      .ant-menu-horizontal > .ant-menu-item {
+        font-size: 14px;
+        color: #ffffff;
+        text-align: center;
+
+        &:hover {
+          background: rgba(7, 124, 235, 0.56);
+          color: white;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .admin {
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    //float: right;
+    //width: fit-content;
+    //height: 100%;
+    text-align: right;
+    padding-right: 25px;
+    display: flex;
+    //align-items: center;
+    :global {
+      svg {
+        font-size: 16px;
+      }
+    }
+    .time {
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 10px;
+      cursor: default;
+    }
+
+    .setting {
+      display: inline-block;
+      cursor: pointer;
+      img {
+        font-size: 16px;
+        width: 16px;
+      }
+    }
+
+    .message {
+      cursor: pointer;
+      margin-left: 20px;
+    }
+
+    .user {
+      display: inline-block;
+      // cursor: pointer;
+      img {
+        width: 24px;
+        margin-top: -3px;
+        margin-right: 4px;
+      }
+    }
+  }
+  .switch {
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+    :global {
+      .ant-switch-checked {
+        background-color: #066dce;
+      }
+    }
+  }
+}

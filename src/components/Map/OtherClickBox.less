@@ -1,0 +1,140 @@
+.OtherClickBox {
+  width: 320px;
+  max-height: 600px;
+  background-color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  h3 {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    line-height: 36px;
+    text-align: center;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 30px 0 10px;
+  }
+  .content {
+    :global {
+      .ant-col {
+        position: relative;
+        font-size: 13px;
+      }
+      .ant-col-10 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .params {
+      margin: 15px 10px;
+      text-align: center;
+      b {
+        display: block;
+        font-size: 20px;
+        color: #0b80ef;
+        line-height: 24px;
+        font-weight: 400;
+        span {
+          font-size: 14px;
+        }
+      }
+      i {
+        position: absolute;
+        display: inline-block;
+        height: 30px;
+        width: 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+        top: 8px;
+        right: 0;
+      }
+    }
+    .busLines {
+      padding: 5px 10px;
+      border-top: 1px solid rgba(0, 0, 0, 0.09);
+      .buses {
+        width: 100%;
+        // max-height: 120px;
+        // min-height: 60px;
+        height: 90px;
+        overflow-y: auto;
+      }
+      span {
+        display: block;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.65);
+        line-height: 16px;
+        text-indent: 5px;
+        margin-bottom: 3px;
+      }
+      i {
+        font-style: normal;
+        display: block;
+        background: rgba(11, 128, 239, 0.1);
+        border-radius: 10px;
+        border-radius: 10px;
+        line-height: 20px;
+        text-align: center;
+        margin: 5px;
+      }
+    }
+  }
+  .Chart {
+    height: 150px;
+    width: 100%;
+  }
+  .shiftAnalysis {
+    padding: 0 15px 15px 20px;
+    line-height: 24px;
+    .lineName {
+      span {
+        font-size: 18px;
+        color: #0b80ef;
+      }
+    }
+    .lineStopName {
+      line-height: 24px;
+    }
+    .line {
+      font-size: 13px;
+      color: rgba(0, 0, 0, 1);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      word-break: break-all;
+      span {
+        display: inline-block;
+        color: #999;
+      }
+    }
+    .time {
+      margin: 8px 0;
+      i,
+      b {
+        font-style: normal;
+        font-weight: 400;
+        color: #fff;
+        background: #048239;
+        border-radius: 2px;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        text-align: center;
+        margin-right: 8px;
+        font-size: 13px;
+      }
+      b {
+        background: #f5130d;
+        margin-left: 20px;
+      }
+      span {
+        display: inline-block;
+        width: 50px;
+        font-size: 13px;
+        color: #000;
+      }
+    }
+  }
+}

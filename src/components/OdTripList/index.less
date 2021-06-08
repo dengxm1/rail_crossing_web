@@ -1,0 +1,73 @@
+.listContent {
+  height: 100%;
+}
+.cardContent {
+  height: 50%;
+  padding-bottom: 32px;
+}
+.listCard {
+  height: 100%;
+  overflow: hidden;
+  .listTitle {
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(11, 128, 239, 0.06);
+    padding: 0 10px;
+    .titleTip {
+      font-family: PingFangSC-Medium;
+      font-size: 12px;
+      color: #9b9b9b;
+    }
+  }
+  .listOdNum {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  :global {
+    .ant-card-head {
+      min-height: auto;
+      border-bottom: none;
+      padding: 0;
+      .ant-card-head-title {
+        padding: 0;
+      }
+    }
+    .ant-card-body {
+      padding: 0;
+      overflow-y: auto;
+      height: calc(100% - 40px);
+      .ant-list {
+        .ant-list-items {
+          .ant-list-item {
+            padding: 0 10px;
+            height: 40px;
+            &:last-child {
+              border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+            .ant-list-item-meta {
+              .ant-list-item-meta-avatar,
+              .ant-list-item-meta-title {
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0.65);
+              }
+            }
+          }
+        }
+        .ant-list-header {
+          border-bottom: none;
+          padding: 0;
+        }
+        .ant-spin-container {
+        }
+        .ant-list-footer {
+          padding: 0;
+          height: 32px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import '../../global';
+
+//右边的卡片
+.public_width_card(@right) {
+  position: absolute;
+  top: 0;
+  right: @right;
+  bottom: 0;
+  // background: white;
+}
+// .rightRelativeContain {
+//   box-sizing: border-box;
+//   width: 450px;
+//   position: relative;
+//   height: 100%;
+// }
+.rightCard {
+  box-sizing: border-box;
+  .public_width_card(0);
+  .public_transition;
+}
+.hiddenRelativeContain {
+  box-sizing: border-box;
+  .public_width_card(-334px);
+  .public_transition;
+}
+.hiddenRightCard {
+  box-sizing: border-box;
+  .public_width_card(-350px);
+  .public_transition;
+}
+
+.flowTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+// .rightflexibleContain {
+//   display: flex;
+//   background: rgb(255, 255, 255);
+//   width: 30px;
+//   position: absolute;
+//   top: 0;
+//   left: -30px;
+//   box-sizing: border-box;
+// }
+// .iconContain {
+//   padding: 10px 5px;
+//   display: flex;
+//   align-items: center;
+//   font-size: 16px;
+// }
+//右边图表卡片
+// .right_chart_card {
+//   box-sizing: border-box;
+//   position: relative;
+//   width: @left_right_width;
+//   height: calc(100%);
+//   background: white;
+//   overflow-y: auto;
+// }
+// .right_chart_card_visible {
+//   right: 0;
+// }

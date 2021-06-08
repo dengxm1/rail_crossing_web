@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charSet="utf-8"/>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src *"/> -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <!-- <meta http-equiv="X-Frame-Options" content="SAMEORIGIN"> -->
+    <title>轨交公交接驳优化分析系统</title>
+    <!--leaflet-->
+    <script type="text/javascript" src="/leaflet/leaflet.js"></script>
+    <link rel="stylesheet" href="/leaflet/leaflet.css"/>
+    <!--    单点登录插件、css-->
+    <script src="/leaflet/idaas-login-plugin.js"></script>
+</head>
+<body>
+<script>
+  const hostname = window.location.hostname;
+  let configData = {
+    serverUrl: 'http://59.207.61.4:11262',   // 正式 (政务外网)
+    portalUrl: 'http://59.207.61.4:11262/frontend/login#/login', 
+    appId: "6923d18b0fbc91f87da5279e8d7be76bvh8iUM4BgaF",
+    logoutAppId: 'szzzjwt43',
+  };
+  if (hostname === '172.17.168.60') {
+    configData = {
+      serverUrl: 'http://42.228.55.199:18000/',  // 测试 (60)
+      portalUrl: 'http://42.228.55.199:18000/frontend/login#/login',
+      appId: "0e6818a0fd5505d91c2ff1517aab7713u2HVjW4Ul17",
+      logoutAppId: 'zzdjwt64',
+    };
+  }
+  //以下为单点登录配置
+  var configIDaaSConfig = new IDaaSLoginPlugin({
+    serverUrl: configData.serverUrl,
+    portalUrl: configData.portalUrl,
+    appId: configData.appId,
+    instanceId: "zzd",
+    styleUrl: "",
+    box: "",
+    width: 340,
+    height: 410,
+    target: true
+  });
+  localStorage.setItem('appId',configData.logoutAppId)
+  
+  // localStorage.setItem('useLogout','1') // 退出方式变换
+
+  //用来接收单点登录发送过来的消息，成功登陆后跳转到指定页面
+  window.addEventListener('message', function(event) {
+    typeof event.data.startUrl == 'string' && event.data.startUrl != '' && (window.location.href = event.data.startUrl);
+  });
+</script>
+<div id="root"></div>
+<style>
+    .amap-copyright {
+        visibility: hidden !important;
+    }
+
+    .amap-logo {
+        display: none !important;
+    }
+
+    .leaflet-container .leaflet-control-attribution {
+        display: none !important;
+    }
+</style>
+</body>
+</html>

@@ -1,0 +1,160 @@
+@import '../../../global';
+//表单
+.formCard {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  z-index: 99;
+  :global {
+    .ant-card-head {
+      border-bottom: none;
+      text-align: center;
+      height: 33px;
+      line-height: 33px;
+      font-family: PingFangSC-Medium;
+      font-size: 16px;
+      color: #0b80ef;
+      font-weight: 600;
+    }
+    .ant-card-body {
+      padding: 10px 16px;
+    }
+  }
+}
+.busTitle {
+  display: block;
+  line-height: 40px;
+  font-size: 16px;
+  color: #0b80ef;
+  text-align: center;
+  font-weight: 600;
+}
+.panelHeader {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  .panelNum {
+    width: 24px;
+    height: 24px;
+    background: #0b80ef;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 24px;
+    color: #ffffff;
+    font-size: 12px;
+  }
+  .panelTitle {
+    margin-left: 8px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+  }
+}
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #0b80ef;
+  border-left: 2px solid #0b80ef;
+  transform: rotate(45deg); /*旋转角度*/
+  transition: all 0.2s ease;
+}
+.arrowDown {
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #0b80ef;
+  border-left: 2px solid #0b80ef;
+  transform: rotate(225deg); /*旋转角度*/
+  transition: all 0.2s ease;
+}
+.extraTip {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+.lineItems {
+  padding: 10px;
+  cursor: pointer;
+  .busLineName {
+    text-align: left;
+    line-height: 16px;
+    margin-bottom: 6px;
+    span {
+      font-size: 16px;
+      color: #0b80ef;
+      margin-right: 3px;
+    }
+    i {
+      font-style: normal;
+      font-size: 12px;
+      color: #999;
+      position: relative;
+      top: -1px;
+      b {
+        font-weight: 400;
+        display: inline-block;
+        max-width: 165px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+  .extraTip {
+    text-align: left;
+    padding-left: 3px;
+  }
+}
+.lineItems:hover,
+.lineItemsActive {
+  background-color: #0b80ef;
+  box-shadow: 0 0 2px #49a2f5;
+  color: #fff;
+  .busLineName {
+    span {
+      color: #fff;
+    }
+    i {
+      color: #fff;
+    }
+  }
+  .extraTip {
+    color: #fff;
+  }
+}
+
+.loading_style {
+  margin: auto;
+  position: relative;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lineList {
+  :global {
+    .ant-list-item {
+      padding: 0;
+    }
+  }
+}
+.analyzeContain {
+  top: 260px;
+  border-bottom: none;
+  overflow-y: auto;
+  :global {
+    .ant-list-item {
+      background-color: #fff;
+      margin: 5px;
+    }
+    .ant-collapse-content-box {
+      background: rgb(230, 242, 253);
+      padding: 10px 12px;
+    }
+  }
+}
+.analyzeContain .stopAnalysis {
+  :global {
+    .ant-list-item-meta-title {
+      width: 240px !important;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import '../../../../global';
+.loading_style {
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+.mainContent {
+  position: relative;
+  height: 100%;
+}
+.cardContent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 40px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.UnitCard {
+  min-height: 160px;
+  height: 33.33%;
+  :global {
+    .ant-spin-nested-loading {
+      width: 100%;
+      height: 100%;
+    }
+    .ant-spin-container {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.tripTime {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.btnContent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+.assessBtn {
+  width: 100%;
+  height: 100%;
+}

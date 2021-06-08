@@ -1,0 +1,107 @@
+@import '../../../global';
+//表单
+.formCard {
+  //height: 180px;
+  position: relative;
+  z-index: 19;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  :global {
+    .ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn {
+      font-size: 16px;
+      color: #0b80ef;
+      text-align: center;
+      font-weight: 600;
+    }
+    .ant-card-head {
+      border-bottom: none;
+      text-align: center;
+      height: 33px;
+      line-height: 33px;
+      font-family: PingFangSC-Medium;
+      font-size: 16px;
+      color: #0b80ef;
+      font-weight: 600;
+    }
+    .ant-card-body {
+      padding: 10px 16px;
+    }
+  }
+}
+.busTitle {
+  display: block;
+  line-height: 40px;
+  font-size: 16px;
+  color: #0b80ef;
+  text-align: center;
+  font-weight: 600;
+}
+.panelHeader {
+  display: flex;
+  align-items: center;
+  .panelNum {
+    width: 24px;
+    height: 24px;
+    background: #0b80ef;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 24px;
+    color: #ffffff;
+    font-size: 12px;
+  }
+  .panelTitle {
+    margin-left: 8px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+  }
+}
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #0b80ef;
+  border-left: 2px solid #0b80ef;
+  transform: rotate(45deg); /*旋转角度*/
+  transition: all 0.2s ease;
+}
+.arrowDown {
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #0b80ef;
+  border-left: 2px solid #0b80ef;
+  transform: rotate(225deg); /*旋转角度*/
+  transition: all 0.2s ease;
+}
+.extraTip {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+//分析列表
+.correlationAnalyze {
+  top: 230px;
+}
+.flowAnalyze {
+  top: 272px;
+}
+//分析列表
+.analyzeContain2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  /*  overflow-y: auto;
+    overflow-x: hidden;*/
+  background: white;
+  text-align: center;
+  bottom: 0;
+  z-index: 10;
+  :global {
+    .ant-spin-nested-loading {
+      position: absolute;
+      top: 22px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      .ant-spin-container {
+        height: 100%;
+      }
+    }
+  }
+}

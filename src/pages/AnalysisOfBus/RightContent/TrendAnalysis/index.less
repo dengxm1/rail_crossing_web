@@ -1,0 +1,175 @@
+@import '../../../../global';
+//类型分析
+.typeAnalysis {
+  width: 100%;
+  height: 100%;
+  min-height: 576px;
+  :global {
+    .ant-spin-nested-loading {
+      height: 100%;
+    }
+    .ant-spin-container {
+      height: 100%;
+    }
+  }
+}
+.suggest_loading {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  z-index: 600;
+  background: #ffffff;
+  border: 1px solid #7ec5fc;
+  & > div > .ant-spin {
+    max-height: 100%;
+  }
+}
+.trend_titleContent {
+  height: 33px;
+  line-height: 33px;
+}
+.first_outerBody {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.bodyWrap {
+  height: 100%;
+  width: 100%;
+  background: white;
+  padding: 10px 15px;
+  .busName {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #0b80ef;
+  }
+  .rateContent {
+    display: flex;
+    .repeat,
+    .flowprobability {
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.45);
+      text-align: center;
+      line-height: 20px;
+    }
+    .flowprobability {
+      margin-left: 15px;
+    }
+  }
+}
+.outerBody {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.innerBody {
+  margin: 5px 15px;
+  line-height: 24px;
+  :global {
+    .ant-col-8 {
+      font-size: 12px;
+      color: #999999;
+    }
+    .ant-col-16 {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
+  .trendChart {
+    height: 150px;
+    width: 100%;
+  }
+}
+//线路走向
+.lineTrend {
+  position: relative;
+  height: 95px;
+  background: #ffffff;
+  .titleContent {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+}
+
+.chart_content {
+  height: calc(100% - 95px);
+}
+//线路信息
+.lineInfo {
+  position: relative;
+  height: 100px;
+  background: #ffffff;
+  .titleContent {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .bodyContent {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    .unitBody {
+      width: 33%;
+      text-align: center;
+      .distance {
+        font-size: 20px;
+        color: #0b80ef;
+        i {
+          font-style: normal;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+      .distanceTip {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.85);
+      }
+    }
+    .centerBody {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 30px;
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+.chart_wrap {
+  height: calc(100% - 100px);
+}
+//公交轨交关系分析
+.busRail {
+  height: 100%;
+  position: relative;
+  .busRailTitle {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .busRailBody {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    overflow-y: auto;
+  }
+}
